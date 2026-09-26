@@ -131,7 +131,7 @@ jobs:
 
       - name: Test Stellar contracts
         working-directory: stellar-contracts
-        run: cargo test
+        run: cargo test --workspace
 
       - name: Build pet transfer adoption contract
         run: cargo build --manifest-path stellar-contracts/contracts/pet-transfer-adoption/Cargo.toml --target wasm32-unknown-unknown --release
